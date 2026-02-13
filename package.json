@@ -1,0 +1,39 @@
+{
+  "name": "agentic-app-generator",
+  "version": "1.0.0",
+  "description": "Two-tier AI-powered full-stack application generator",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "tier1-spec-generator",
+    "tier2-renderer",
+    "components-library"
+  ],
+  "scripts": {
+    "generate": "node generate.mjs",
+    "tier1": "node tier1-spec-generator/index.mjs",
+    "tier2": "node tier2-renderer/index.mjs",
+    "test": "npm run test --workspaces",
+    "build": "npm run build --workspaces",
+    "lint": "eslint . --ext .mjs,.js",
+    "example:todo": "node generate.mjs --example todo",
+    "example:crm": "node generate.mjs --example crm"
+  },
+  "keywords": [
+    "ai",
+    "full-stack",
+    "code-generation",
+    "agentic",
+    "scaffold",
+    "generator"
+  ],
+  "author": "twilson63",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

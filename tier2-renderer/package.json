@@ -1,0 +1,26 @@
+{
+  "name": "@agentic/tier2-renderer",
+  "version": "1.0.0",
+  "description": "Tier 2: Application Renderer - Generates full-stack apps from JSON specs",
+  "type": "module",
+  "main": "index.mjs",
+  "bin": {
+    "app-renderer": "./index.mjs"
+  },
+  "scripts": {
+    "test": "node test.mjs",
+    "start": "node index.mjs"
+  },
+  "keywords": [
+    "renderer",
+    "generator",
+    "scaffold",
+    "full-stack",
+    "agentic"
+  ],
+  "author": "twilson63",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@agentic/tier1-spec-generator",
+  "version": "1.0.0",
+  "description": "Tier 1: Specification Generator - Generates JSON app specs from natural language",
+  "type": "module",
+  "main": "index.mjs",
+  "bin": {
+    "spec-generator": "./index.mjs"
+  },
+  "scripts": {
+    "test": "node test.mjs",
+    "start": "node index.mjs"
+  },
+  "keywords": [
+    "specification",
+    "generator",
+    "llm",
+    "ai",
+    "agentic"
+  ],
+  "author": "twilson63",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
