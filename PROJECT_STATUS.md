@@ -218,7 +218,7 @@ node tier2-renderer/index.mjs \
 - ✅ Multi-framework support
 - ✅ Incremental updates (don't overwrite!)
 - ✅ Component library integration
-- ✅ Scout OS Adams API ready
+- ✅ Scout OS Atoms API ready
 - ✅ TypeScript generation
 - ✅ Environment configuration
 - ✅ Testing setup (Vitest/Playwright)
@@ -283,14 +283,14 @@ Ready to integrate with a component library for:
 
 **Location:** `components-library/` (ready to populate)
 
-### **Scout OS Adams API**
+### **Scout OS Atoms API**
 Integration ready for:
 - Advanced UI generation
 - Design system application
 - Responsive layouts
 - Component optimization
 
-**Integration Point:** `tier2-renderer/adams-api-client.mjs` (ready to implement)
+**Integration Point:** `tier2-renderer/atoms-api-client.mjs` (ready to implement)
 
 ---
 
@@ -363,8 +363,8 @@ use spec generator to create a CRM with user authentication and role-based acces
 
 If you want to extend the project:
 
-1. **Implement Adams API Client**
-   - Create `tier2-renderer/adams-api-client.mjs`
+1. **Implement Atoms API Client**
+   - Create `tier2-renderer/atoms-api-client.mjs`
    - Integrate with Scout OS
    - Advanced UI generation
 
@@ -433,7 +433,7 @@ The Agentic App Generator is a fully functional two-tier system that:
 3. ✅ Renders working full-stack applications (Tier 2)
 4. ✅ Supports multiple frameworks
 5. ✅ Integrates with OpenCode
-6. ✅ Ready for Scout OS Adams API
+6. ✅ Ready for Scout OS Atoms API
 7. ✅ Ready to use right now!
 
 **🚀 Ready to transform ideas into applications in minutes!**

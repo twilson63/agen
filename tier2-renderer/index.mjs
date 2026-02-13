@@ -2,11 +2,11 @@
 
 /**
  * Tier 2: Application Renderer
- * 
+ *
  * Takes a JSON specification and generates/modifies a full-stack application.
- * Uses component library and integrations (Scout OS Adams API) for code generation.
+ * Uses component library and integrations (Scout OS Atoms API) for code generation.
  * Supports incremental updates without overwriting existing files.
- * 
+ *
  * Usage:
  *   node tier2-renderer/index.mjs --spec specs/app.json --output ./my-app
  *   node tier2-renderer/index.mjs --spec specs/new-features.json --target ./existing-app --incremental
@@ -32,7 +32,7 @@ export class ApplicationRenderer {
       incremental: options.incremental || false,
       dryRun: options.dryRun || false,
       componentLibrary: options.componentLibrary || '../components-library',
-      adamsApi: options.adamsApi || null,
+      atomsApi: options.atomsApi || null,
       ...options
     };
     
@@ -428,10 +428,10 @@ export class ApplicationRenderer {
       envVars += `JWT_EXPIRES_IN="7d"\n`;
     }
     
-    // Scout OS Adams API
-    if (this.config.adamsApi) {
-      envVars += `ADAMS_API_URL="${this.config.adamsApi.url}"\n`;
-      envVars += `ADAMS_API_KEY="${this.config.adamsApi.apiKey}"\n`;
+    // Scout OS Atoms API
+    if (this.config.atomsApi) {
+      envVars += `ATOMS_API_URL="${this.config.atomsApi.url}"\n`;
+      envVars += `ATOMS_API_KEY="${this.config.atomsApi.apiKey}"\n`;
     }
     
     await this.writeFile('.env', envVars);

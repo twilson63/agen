@@ -162,9 +162,9 @@ node tier2-renderer/index.mjs \
     "database": "postgresql",
     "typescript": true
   },
-  "adamsApi": {
+  "atomsApi": {
     "enabled": true,
-    "url": "https://api.scout-os.com/adams",
+    "url": "https://api.scoutos.com/api/atoms",
     "apiKey": "your-api-key"
   }
 }

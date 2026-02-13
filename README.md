@@ -99,7 +99,7 @@ An AI-powered system that:
 - ✅ Project scaffolding
 - ✅ File generation/editing
 - ✅ Component instantiation
-- ✅ Scout OS Adams API integration
+- ✅ Scout OS Atoms API integration
 - ✅ Multi-framework support (React, Vue, Svelte)
 - ✅ Backend support (Express, Fastify, NestJS)
 - ✅ Database support (PostgreSQL, MongoDB, SQLite)
@@ -145,9 +145,9 @@ Create `config/settings.json`:
     "database": "postgresql",
     "typescript": true
   },
-  "adamsApi": {
+  "atomsApi": {
     "enabled": true,
-    "url": "https://api.scout-os.com/adams",
+    "url": "https://api.scoutos.com/api/atoms",
     "apiKey": "your-api-key"
   }
 }
@@ -211,7 +211,7 @@ agentic-app-generator/
 │   ├── scaffold.mjs          # Project scaffolding
 │   ├── file-generator.mjs    # File creation/update
 │   ├── component-instantiator.mjs  # Component handling
-│   ├── adams-api-client.mjs  # Scout OS integration
+│   ├── atoms-api-client.mjs  # Scout OS integration
 │   └── diffs/                # Diff/patch utilities
 ├── components-library/        # Component library
 │   ├── ui/                   # UI components
@@ -304,7 +304,7 @@ The JSON specification follows this structure:
    - Parse existing code (if modifying)
    - Generate/update files
    - Use component library
-   - Call Adams API for complex components
+   - Call Atoms API for complex components
    - Validate generated code
 4. **Output**: Working application
 
@@ -316,9 +316,9 @@ See `examples/` directory for:
 - Blog platform
 - E-commerce store
 
-## Scout OS Adams API Integration
+## Scout OS Atoms API Integration
 
-The renderer uses Adams API for:
+The renderer uses Atoms API for:
 - Complex component generation
 - Design system application
 - Responsive layout generation
@@ -327,11 +327,11 @@ The renderer uses Adams API for:
 Configuration:
 
 ```javascript
-import { AdamsAPIClient } from './tier2-renderer/adams-api-client.mjs';
+import { AtomsAPIClient } from './tier2-renderer/atoms-api-client.mjs';
 
-const client = new AdamsAPIClient({
-  apiKey: process.env.ADAMS_API_KEY,
-  baseUrl: 'https://api.scout-os.com/adams'
+const client = new AtomsAPIClient({
+  apiKey: process.env.ATOMS_API_KEY,
+  baseUrl: 'https://api.scoutos.com/api/atoms'
 });
 
 // Generate page
@@ -388,7 +388,7 @@ ollama list
 ollama serve
 ```
 
-### Adams API Errors
+### Atoms API Errors
 
 Check API key and quota in config
 
